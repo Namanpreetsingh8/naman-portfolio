@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/63a58c5860.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="contanier">
+            <nav>
+                <img src="logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi I'm <span>Naman</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+<!---About me-->
+<div id="about">
+    <div class="contanier">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="n2.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores velit eos nisi molestias? Voluptas laboriosam illo cum iusto dolore doloribus aperiam nesciunt. In earum, fuga vel eos asperiores fugit quam!</p>
+                <div class="tab">
+                    <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link active-link"  onclick="opentab('Experince')">Experience</p>
+                    <p class="tab-link active-link"  onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desinging Web</li>
+                        <li><span>UI/UX</span><br>Website Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experince">
+                    <ul>
+                        <li>Just Started in 2023</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li>10th pass with ICSE Board</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Services-->
+<div id="services">
+    <div class="contanier">
+        <div class="sub-title">Services</div>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore illo, sed dolor atque sit excepturi distinctio. Vero quidem eos, quos cupiditate consequatur iusto, quisquam labore sunt accusamus ad repellat?</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Apps Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dolore illo, sed dolor atque sit excepturi distinctio. Vero quidem eos, quos cupiditate consequatur iusto, quisquam labore sunt accusamus ad repellat?</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn">See More</a>
+    </div>
+</div>
+<!--Contact-->
+<div id="Contact">
+    <div class="contanier">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>singhnamanpreet906@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7658080523</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100083660905954"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/namanpreetsingh8/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+                <a href="my-cv.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Naman</p>
+    </div>
+</div>
+<!-----js script-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of  tablinks){
+            tablink.classList.remove("actve-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGU09o5pC1PaaxQJ2qH6ZOWLOAPon6FGKEeofgBytiiHWEssIVqChIIhCPqdYmE7KQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
